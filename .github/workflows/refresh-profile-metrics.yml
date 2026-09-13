@@ -1,0 +1,94 @@
+name: Refresh Profile Metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Collect contribution data
+        uses: actions/github-script@v7
+        env:
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        with:
+          script: |
+            const fs = require('fs');
+            const login = process.env.PROFILE_USERNAME;
+            const now = new Date();
+            const from = new Date(now);
+            from.setDate(from.getDate() - 180);
+
+            const query = `
+              query($login: String!, $from: DateTime!, $to: DateTime!) {
+                user(login: $login) {
+                  contributionsCollection(from: $from, to: $to) {
+                    contributionCalendar {
+                      totalContributions
+                      weeks {
+                        contributionDays {
+                          date
+                          contributionCount
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `;
+
+            const result = await github.graphql(query, {
+              login,
+              from: from.toISOString(),
+              to: now.toISOString(),
+            });
+
+            const calendar = result.user.contributionsCollection.contributionCalendar;
+            fs.mkdirSync('assets', { recursive: true });
+            fs.writeFileSync(
+              'assets/contributions.raw.json',
+              JSON.stringify(
+                {
+                  totalContributions: calendar.totalContributions,
+                  weeks: calendar.weeks,
+                },
+                null,
+                2,
+              ),
+            );
+
+      - name: Generate contribution EKG SVGs
+        run: |
+          node scripts/generate-contrib-ekg.mjs \
+            assets/contributions.raw.json \
+            assets/contribution-ekg-dark.svg \
+            assets/contribution-ekg-light.svg
+
+      - name: Capture last deploy line
+        run: |
+          latest_message="$(git log -1 --pretty=%s)"
+          echo "last_deploy: ${latest_message}" > assets/last-deploy.txt
+
+      - name: Clean temporary files
+        run: rm -f assets/contributions.raw.json
+
+      - name: Commit refreshed assets
+        run: |
+          if git diff --quiet; then
+            echo "No profile metric updates"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contribution-ekg-dark.svg assets/contribution-ekg-light.svg assets/last-deploy.txt
+          git commit -m "chore: refresh profile metrics"
+          git push

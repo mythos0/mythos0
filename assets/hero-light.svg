@@ -1,0 +1,19 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Continuous You light terminal hero">
+  <rect width="1280" height="360" rx="16" fill="#F5F5F4"/>
+  <rect x="18" y="18" width="1244" height="324" rx="12" fill="#FFFFFF" stroke="#D6D3D1"/>
+  <rect x="18" y="18" width="1244" height="36" rx="12" fill="#F5F5F4"/>
+  <circle cx="44" cy="36" r="6" fill="#C4C4C4"/>
+  <circle cx="66" cy="36" r="6" fill="#C4C4C4"/>
+  <circle cx="88" cy="36" r="6" fill="#C4C4C4"/>
+  <text x="110" y="41" fill="#57534E" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13">pipeline://continuous-you</text>
+  <text x="48" y="94" fill="#1C1917" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="20">$ pipeline run mythos0/profile</text>
+  <text x="48" y="136" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18">checkout  ✓ source resolved</text>
+  <text x="48" y="170" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18">install   ✓ fundamentals loaded</text>
+  <text x="48" y="204" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18">build     ✓ systems assembled</text>
+  <text x="48" y="238" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18">test      ✓ confidence green</text>
+  <text x="48" y="272" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18">deploy    ✓ shipping</text>
+  <text x="48" y="308" fill="#B45309" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="19">status: continuous</text>
+  <rect x="268" y="292" width="11" height="20" fill="#B45309">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
