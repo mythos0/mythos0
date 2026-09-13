@@ -1,79 +1,90 @@
 <div align="center">
-  <img src="name.svg" alt="mythos0 banner" width="100%" />
 
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=Flutter+Engineer+%7C+Cross-Platform+Builder;Clean+Architecture+%7C+Scalable+Apps;Animations+%2B+Performance+%2B+Great+UX" alt="Typing animation" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" alt="Continuous You terminal hero" width="100%">
+</picture>
 
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=mythos0&style=for-the-badge&color=0e75b6" alt="profile views" />
-    <img src="https://img.shields.io/github/followers/mythos0?style=for-the-badge&color=58A6FF" alt="followers" />
-    <img src="https://img.shields.io/github/stars/mythos0?style=for-the-badge&color=F39C12" alt="stars" />
-  </p>
 </div>
 
----
+## `# stage: checkout`
 
-## 🚀 About Me
+```bash
+$ whoami --verbose
+name            : Mythos
+role            : Computer Science Engineer
+focus           : Distributed systems, backend architecture, performance-first products
+uptime_coding   : still shipping
+status          : passing
+```
 
-- 🧠 I build clean, production-grade **Flutter applications** with strong architecture.
-- 🎯 I focus on **smooth UX, maintainable code, and high performance**.
-- 🔧 I work across **Flutter, Dart, Firebase, CI/CD, and mobile release pipelines**.
-- 🌱 Currently improving **advanced state management + app scalability patterns**.
+## `# stage: install`
 
----
+- Dependencies loaded: CS fundamentals, algorithmic problem-solving, and production debugging discipline.
+- Built around systems that prioritize correctness, scale, and maintainability.
+- Currently finishing final-year CSE work and deepening backend/distributed systems rigor.
+- Target environment: software engineering roles with ownership across design, implementation, and delivery.
 
-## 🧩 Skills Snapshot
+## `# stage: build`
 
-### Languages & Frameworks
-<p>
-  <img src="https://skillicons.dev/icons?i=dart,flutter,kotlin,swift,firebase,sqlite" alt="languages and frameworks" />
-</p>
+```mermaid
+flowchart LR
+  A[Client Layer\nFlutter / Web] --> B[API Layer\nNode.js / Go]
+  B --> C[Data Layer\nPostgreSQL / Redis / SQLite]
+  B --> D[Async Layer\nQueues / Jobs / Events]
+  D --> E[Infra Layer\nDocker / GitHub Actions / Cloud Deploy]
+  C --> F[Observability\nMetrics / Logging / Alerts]
+  E --> F
+```
 
-### Tools & Workflow
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,androidstudio,figma" alt="tools and workflow" />
-</p>
+## `# stage: test`
 
-### Core Strengths
-<p>
-  <img src="https://img.shields.io/badge/Clean_Architecture-111827?style=for-the-badge&logo=flutter&logoColor=white" alt="clean architecture" />
-  <img src="https://img.shields.io/badge/State_Management-1f6feb?style=for-the-badge&logo=flutter&logoColor=white" alt="state management" />
-  <img src="https://img.shields.io/badge/CI%2FCD-0f766e?style=for-the-badge&logo=githubactions&logoColor=white" alt="ci cd" />
-  <img src="https://img.shields.io/badge/UI%2FUX-9333ea?style=for-the-badge&logo=figma&logoColor=white" alt="ui ux" />
-  <img src="https://img.shields.io/badge/Testing-16a34a?style=for-the-badge&logo=dart&logoColor=white" alt="testing" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contribution-ekg-dark.svg">
+  <img src="assets/contribution-ekg-light.svg" alt="Contribution EKG graph" width="100%">
+</picture>
 
----
+last_deploy → [`assets/last-deploy.txt`](assets/last-deploy.txt)
 
-## 📊 GitHub Analytics
+## `# stage: deploy`
 
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=mythos0&show_icons=true&theme=transparent&rank_icon=github&hide_border=true" alt="github stats" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=mythos0&theme=transparent&hide_border=true" alt="streak stats" />
-</div>
+- **v3.1.0 — Distributed key-value store**  
+  Go implementation of replicated key-value primitives with consensus-oriented design.  
+  Stack: Go, concurrency primitives, persistence foundations.  
+  Repo: https://github.com/mythos0
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mythos0&theme=github-compact&hide_border=true&area=true" alt="activity graph" width="98%" />
-</div>
+- **v2.4.0 — Real-time collaboration backend**  
+  Event-driven backend patterns for synchronized multi-user editing workflows.  
+  Stack: Node.js, WebSockets, CRDT-style sync concepts.  
+  Repo: https://github.com/mythos0
 
----
+- **v1.0.0 — First shipped product**  
+  Initial end-to-end project delivered from architecture to release and iteration.  
+  Stack: Flutter, Firebase, CI/CD release pipeline.  
+  Repo: https://github.com/mythos0
 
-## 🏆 Highlight Projects
+<details>
+  <summary>Older releases</summary>
 
-<div align="center">
-  <a href="https://github.com/mythos0/Face-Recognition-Attendance">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mythos0&repo=Face-Recognition-Attendance&theme=transparent&hide_border=true" alt="Face Recognition Attendance" />
-  </a>
-  <a href="https://github.com/mythos0/codeforces-solve">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mythos0&repo=codeforces-solve&theme=transparent&hide_border=true" alt="codeforces solve" />
-  </a>
-</div>
+- **v0.9.x — Competitive programming tooling and practice automation**
+- **v0.8.x — Early mobile architecture experiments**
 
----
+</details>
 
-## 🤝 Connect
+## `# stage: monitor`
 
-<p>
-  <a href="https://github.com/mythos0" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white" alt="github" />
-  </a>
-</p>
+```txt
+● signal: live
+● source: daily GraphQL contribution sync
+● mode: stable
+```
+
+## `# stage: release`
+
+```txt
+tag: v-final-year-2026
+role_target: Software Engineer (Backend / Systems)
+email: available-on-request
+linkedin: https://www.linkedin.com/in/
+resume: https://github.com/mythos0
+```

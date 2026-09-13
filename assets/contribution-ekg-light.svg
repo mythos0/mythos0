@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contribution EKG graph">
+  <rect width="1200" height="280" rx="14" fill="#F5F5F4"/>
+  <rect x="12" y="12" width="1176" height="256" rx="10" fill="#FFFFFF"/>
+  <text x="34" y="44" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18"># stage: test</text>
+  <text x="34" y="66" fill="#57534E" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13">live contributions (2026-09-06 → 2026-09-12)</text>
+  <line x1="42" y1="246" x2="1158" y2="246" stroke="#D6D3D1" stroke-width="1"/>
+  <line x1="42" y1="34" x2="42" y2="246" stroke="#D6D3D1" stroke-width="1"/>
+  <polygon points="42,246 42.00,246.00 228.00,175.33 414.00,104.67 600.00,175.33 786.00,34.00 972.00,175.33 1158.00,104.67 1158,246" fill="rgba(180, 83, 9, 0.14)"/>
+  <polyline points="42.00,246.00 228.00,175.33 414.00,104.67 600.00,175.33 786.00,34.00 972.00,175.33 1158.00,104.67" fill="none" stroke="#B45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1158.00" cy="104.67" r="4" fill="#B45309">
+    <animate attributeName="r" values="4;6;4" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="850" y="44" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13">total=0</text>
+  <text x="850" y="64" fill="#292524" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13">latest_day=2</text>
+</svg>
