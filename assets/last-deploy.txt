@@ -1,1 +1,1 @@
-last_deploy: Merge pull request #2 from mythos0/copilot/redesign-profile-continuous-you
+last_deploy: chore: refresh profile metrics
